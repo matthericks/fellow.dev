@@ -1,5 +1,13 @@
+/* colors from https://lospec.com/palette-list/2bit-demichrome */
+:root {
+  --color0: #211e20;
+  --color1: #555568;
+  --color2: #a0a08b;
+  --color3: #e9efec;
+}
+
 html {
-  background-color: #22272e;
-  color: #adbac7;
+  background-color: var(--color0);
+  color: var(--color3);
   font-family: "Lucida Console";
 }
