@@ -4,16 +4,32 @@
   --color1: #555568;
   --color2: #a0a08b;
   --color3: #e9efec;
+  --base-size: 8px;
 }
 
 html {
   background-color: var(--color0);
   color: var(--color3);
   font-family: "Lucida Console";
+  padding-bottom: var(--base-size * 2);
+}
+
+h1 {
+  font-size: var(--base-size * 8);
+}
+
+h2 {
+  font-size: var(--base-size * 6);
+}
+
+h3 {
+  font-size: var(--base-size * 4);
 }
 
 p {
   transition: color 0.5s, background-color 0.5s;
+
+  font-size: var(--base-size * 2);
 }
 p::before {
   width: 4em;
