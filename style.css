@@ -11,28 +11,33 @@ html {
   background-color: var(--color0);
   color: var(--color3);
   font-family: "Lucida Console";
-  padding-bottom: var(--base-size * 2);
-  max-width: var(--base-size * 100);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h1 {
   font-size: var(--base-size * 8);
+  padding-bottom: var(--base-size * 2);
 }
 
 h2 {
   font-size: var(--base-size * 6);
+  padding-bottom: var(--base-size * 2);
 }
 
 h3 {
   font-size: var(--base-size * 4);
+  padding-bottom: var(--base-size * 2);
 }
 
 p {
   transition: color 0.5s, background-color 0.5s;
-
   font-size: var(--base-size * 2);
+  padding-bottom: var(--base-size * 2);
+}
+
+span {
+  transition: color 0.5s, background-color 0.5s;
+  font-size: var(--base-size * 2);
+  padding-bottom: var(--base-size * 2);
 }
 p::before {
   width: 4em;
@@ -47,4 +52,10 @@ p:hover {
 p:before:hover {
   background-color: var(--color3);
   color: var(--color0);
+}
+
+.content {
+  max-width: var(--base-size * 100);
+  margin-left: auto;
+  margin-right: auto;
 }
