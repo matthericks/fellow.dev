@@ -13,7 +13,8 @@ html {
   font-family: "Lucida Console";
   padding-bottom: var(--base-size * 2);
   max-width: var(--base-size * 100);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
