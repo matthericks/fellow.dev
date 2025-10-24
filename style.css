@@ -4,7 +4,7 @@
   --color1: #555568;
   --color2: #a0a08b;
   --color3: #e9efec;
-  --base-size: 8px;
+  --unit: 8px;
 }
 
 html {
@@ -14,30 +14,30 @@ html {
 }
 
 h1 {
-  font-size: var(--base-size * 8);
-  padding-bottom: var(--base-size * 2);
+  font-size: calc(var(--unit) * 8);
+  padding-bottom: calc(var(--unit) * 2);
 }
 
 h2 {
-  font-size: var(--base-size * 6);
-  padding-bottom: var(--base-size * 2);
+  font-size: calc(var(--unit) * 6);
+  padding-bottom: calc(var(--unit) * 2);
 }
 
 h3 {
-  font-size: var(--base-size * 4);
-  padding-bottom: var(--base-size * 2);
+  font-size: calc(var(--unit) * 4);
+  padding-bottom: calc(var(--unit) * 2);
 }
 
 p {
   transition: color 0.5s, background-color 0.5s;
-  font-size: var(--base-size * 2);
-  padding-bottom: var(--base-size * 2);
+  font-size: calc(var(--unit) * 2);
+  padding-bottom: calc(var(--unit) * 2);
 }
 
 span {
   transition: color 0.5s, background-color 0.5s;
-  font-size: var(--base-size * 2);
-  padding-bottom: var(--base-size * 2);
+  font-size: calc(var(--unit) * 2);
+  padding-bottom: calc(var(--unit) * 2);
 }
 
 p:hover {
@@ -46,7 +46,7 @@ p:hover {
 }
 
 .body-content {
-  max-width: var(--base-size * 100);
+  max-width: calc(var(--unit) * 100);
   margin-left: auto;
   margin-right: auto;
 }
