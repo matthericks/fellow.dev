@@ -61,7 +61,7 @@ p:hover {
 }
 
 .top-bar {
-  max-width: calc(var(--unit) * 135);
+  max-width: calc(var(--unit) * 160);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--unit);
