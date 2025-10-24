@@ -73,13 +73,42 @@ hover-highlight:hover {
   padding-top: var(--unit);
 }
 
-.expander {
-  width: 0;
-  display: none;
-  transition: width 0.5s;
+.color-wipe {
+  position: relative;
+  display: inline-block;
+  color: var(--cream);
+  overflow: hidden;
 }
 
-a.hover + expander:hover {
-  width: auto;
-  display: inline;
+.color-wipe::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  overflow: hidden;
+  color: var(--dark);
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.color-wipe:hover::after {
+  width: 100%;
+}
+
+.color-wipe {
+  position: relative;
+  background: var(--dark);
+
+  background-image: linear-gradient(to right, var(--cream), var(--cream)),
+    linear-gradient(to right, var(--dark), var(--dark));
+
+  background-size: 0% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left center, left center;
+
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.color-wipe:hover {
+  background-size: 100% 100%, 100% 100%;
 }
