@@ -39,22 +39,13 @@ span {
   font-size: var(--base-size * 2);
   padding-bottom: var(--base-size * 2);
 }
-p::before {
-  width: 4em;
-  transition: color 0.5s, background-color 0.5s;
-}
 
 p:hover {
   background-color: var(--color3);
   color: var(--color0);
 }
 
-p:before:hover {
-  background-color: var(--color3);
-  color: var(--color0);
-}
-
-.content {
+.body-content {
   max-width: var(--base-size * 100);
   margin-left: auto;
   margin-right: auto;
