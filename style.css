@@ -34,23 +34,18 @@ h3 {
   margin-bottom: calc(var(--unit) * 2);
 }
 
+a,
+span,
 p {
-  transition: color 0.5s, background-color 0.5s;
   font-size: calc(var(--unit) * 2);
   margin-top: 0;
   margin-bottom: calc(var(--unit) * 2);
 }
 
-/* span {
-  transition: color 0.5s, background-color 0.5s;
-  font-size: calc(var(--unit) * 2);
-  margin-top: 0;
-  margin-bottom: calc(var(--unit) * 2);
-} */
-
 hover-highlight {
   background-color: var(--dark);
   color: var(--cream);
+  transition: color 0.5s, background-color 0.5s;
 }
 
 hover-highlight:hover {
@@ -73,42 +68,6 @@ hover-highlight:hover {
   padding-top: var(--unit);
 }
 
-.color-wipe {
-  position: relative;
-  display: inline-block;
-  color: var(--cream);
-  overflow: hidden;
-}
-
-.color-wipe::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0%;
-  overflow: hidden;
-  color: var(--dark);
-  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.color-wipe:hover::after {
-  width: 100%;
-}
-
-.color-wipe {
-  position: relative;
-  background: var(--dark);
-
-  background-image: linear-gradient(to right, var(--cream), var(--cream)),
-    linear-gradient(to right, var(--dark), var(--dark));
-
-  background-size: 0% 100%, 100% 100%;
-  background-repeat: no-repeat;
-  background-position: left center, left center;
-
-  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.color-wipe:hover {
-  background-size: 100% 100%, 100% 100%;
+.mr-1 {
+  margin-right: var(--unit);
 }
