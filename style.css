@@ -48,6 +48,11 @@ span {
   margin-bottom: calc(var(--unit) * 2);
 }
 
+hover-highlight {
+  background-color: var(--dark);
+  color: var(--cream);
+}
+
 hover-highlight:hover {
   background-color: var(--cream);
   color: var(--dark);
