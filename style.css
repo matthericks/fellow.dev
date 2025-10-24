@@ -41,12 +41,12 @@ p {
   margin-bottom: calc(var(--unit) * 2);
 }
 
-span {
+/* span {
   transition: color 0.5s, background-color 0.5s;
   font-size: calc(var(--unit) * 2);
   margin-top: 0;
   margin-bottom: calc(var(--unit) * 2);
-}
+} */
 
 hover-highlight {
   background-color: var(--dark);
