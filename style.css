@@ -12,6 +12,8 @@ html {
   color: var(--color3);
   font-family: "Lucida Console";
   padding-bottom: var(--base-size * 2);
+  max-width: var(--base-size * 100);
+  margin: 0 auto;
 }
 
 h1 {
