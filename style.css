@@ -1,15 +1,15 @@
-/* colors from https://lospec.com/palette-list/2bit-demichrome */
+/* colors from https://lospec.com/palette-list/dream-based-videogame */
 :root {
-  --color0: #211e20;
-  --color1: #555568;
-  --color2: #a0a08b;
-  --color3: #e9efec;
+  --dark: #27232a;
+  --blue: #979bc7;
+  --pink: #f3c0ce;
+  --cream: #fae6cd;
   --unit: 8px;
 }
 
 html {
-  background-color: var(--color0);
-  color: var(--color3);
+  background-color: var(--dark);
+  color: var(--cream);
   font-family: "Lucida Console";
 }
 
@@ -48,9 +48,9 @@ span {
   margin-bottom: calc(var(--unit) * 2);
 }
 
-p:hover {
-  background-color: var(--color3);
-  color: var(--color0);
+hover-highlight:hover {
+  background-color: var(--cream);
+  color: var(--dark);
 }
 
 .body-content {
@@ -66,4 +66,15 @@ p:hover {
   margin-right: auto;
   padding-left: var(--unit);
   padding-top: var(--unit);
+}
+
+.expander {
+  width: 0;
+  display: none;
+  transition: width 0.5s;
+}
+
+a.hover + expander:hover {
+  width: auto;
+  display: inline;
 }
