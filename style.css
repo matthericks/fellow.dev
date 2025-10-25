@@ -81,7 +81,8 @@ h3 {
   width: 100%;
 }
 
-.hover-text:hover {
+.hover-text:hover,
+.hover-highlight:has(.hover-text:hover) {
   color: var(--dark);
 }
 
