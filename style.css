@@ -5,12 +5,13 @@
   --pink: #f3c0ce;
   --cream: #fae6cd;
   --unit: 8px;
+  --base-font: "Source Code Pro", monospace;
 }
 
 html {
   background-color: var(--dark);
   color: var(--cream);
-  font-family: "Lucida Console";
+  font-family: var(--base-font);
 }
 
 .top-bar {
