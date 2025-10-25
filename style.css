@@ -82,7 +82,7 @@ h3 {
 }
 
 .hover-text:hover,
-.hover-highlight:has(.hover-text:hover) {
+.hover-highlight:hover {
   color: var(--dark);
 }
 
