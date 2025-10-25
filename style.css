@@ -13,6 +13,21 @@ html {
   font-family: "Lucida Console";
 }
 
+.top-bar {
+  max-width: calc(var(--unit) * 160);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--unit);
+  padding-top: var(--unit);
+}
+
+.body-content {
+  max-width: calc(var(--unit) * 100);
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   font-size: calc(var(--unit) * 4);
   font-weight: 700;
@@ -34,40 +49,42 @@ h3 {
   margin-bottom: calc(var(--unit) * 2);
 }
 
-a,
-span,
-p {
-  font-size: calc(var(--unit) * 2);
-  margin-top: 0;
-  margin-bottom: calc(var(--unit) * 2);
+.hover-highlight {
+  position: relative;
 }
 
-hover-highlight {
-  background-color: var(--dark);
+.hover-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--blue);
+  width: 0%;
+  transition: width 0.3s ease-in;
+}
+
+.hover-text,
+.hover-secret {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.hover-text {
   color: var(--cream);
-  transition: color 0.5s, background-color 0.5s;
 }
 
-hover-highlight:hover {
-  background-color: var(--cream);
+.hover-secret {
+  opacity: 0%;
   color: var(--dark);
 }
 
-.body-content {
-  max-width: calc(var(--unit) * 100);
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+.hover-highlight:has(.hover-text:hover)::before {
+  width: 100%;
 }
 
-.top-bar {
-  max-width: calc(var(--unit) * 160);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--unit);
-  padding-top: var(--unit);
+.hover-text:hover {
+  color: var(--dark);
 }
 
-.mr-1 {
-  margin-right: var(--unit);
+.hover-text:hover + .hover-secret {
+  opacity: 100%;
 }
